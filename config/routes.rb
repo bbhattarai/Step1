@@ -1,17 +1,24 @@
 Step1::Application.routes.draw do
 
-  get "skills/sql"
-  get "skills/oraclesql"
-  get "skills/dotnet" 
-  get "skills/ruby" 
-  get "skills/rails" 
-  get "skills/unix" 
-  get "skills/vim" 
-  get "skills/visualstudio" 
-  get "skills/office" 
-  get "skills/tips" 
-  get "skills/tricks"
-  get "skills/help"
+
+  root :to => "skills#home"
+
+  match '/sql',           :to =>  'skills#sql'
+  match '/oraclesql',     :to =>  'skills#oraclesql' 
+  match '/dotnet',        :to =>  'skills#dotnet'
+  match '/ruby',          :to =>  'skills#ruby'
+  match '/rails',         :to =>  'skills#rails'
+  match '/unix',          :to =>  'skills#unix'
+  match '/vim',           :to =>  'skills#vim'
+  match '/visualstudio',  :to =>  'skills#visualstudio'
+  match '/office',        :to =>  'skills#office'
+  match '/tips',          :to =>  'skills#tips'
+  match '/tricks',        :to =>  'skills#tricks'
+  match '/help',          :to =>  'skills#help'
+  match '/about',         :to =>  'skills#about'
+  match '/contact',       :to =>  'skills#contact'
+  match '/signup',        :to =>  'users#new'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,5 +1,9 @@
 class SkillsController < ApplicationController
 
+  def home
+    @title="Home"
+  end
+
   def sql
     @title="SQL"
   end
@@ -46,6 +50,14 @@ class SkillsController < ApplicationController
 
   def help
     @title="Help"
+  end
+
+  def contact
+    @title="Contact"
+  end
+
+  def about
+    @title="About"
   end
 
 end
