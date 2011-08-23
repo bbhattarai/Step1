@@ -1,5 +1,6 @@
 Step1::Application.routes.draw do
 
+  resources :users
 
   root :to => "skills#home"
 
