@@ -9,4 +9,7 @@ module ApplicationHelper
     end
   end
 
+  def logo
+    image_tag("logo.png", :alt => "Daily Blog App", :class => "ropund")
+  end
 end
